@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jersey Aurum Class</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ INTRO SCREEN ============ -->
+<div class="intro" id="intro">
+  <div class="intro-content">
+    <div class="intro-logo">⚡</div>
+    <h1 class="intro-title">JERSEY<br>Aurum Class</h1>
+    <p class="intro-sub">◆ Welcome, Player ◆</p>
+
+    <button class="intro-btn" id="introBtn">
+      <span>LANJUTKAN</span>
+      <span class="intro-btn-arrow">→</span>
+    </button>
+
+    <p class="intro-hint">Klik Lanjutkan Kawann😎</p>
+  </div>
+</div>
+
+<!-- ============ MAIN APP ============ -->
+<button class="music-btn" id="musicBtn" title="Toggle Music">🔊</button>
+
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<main class="container" id="mainApp">
+  <header class="card-header">
+    <h1 class="title">JERSEY AURUM CLASS</h1>
+    <p class="subtitle">◆ Input Data Pemain ◆</p>
+  </header>
+
+  <form id="form" autocomplete="off">
+    <div class="field">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" placeholder="Contoh: Shehann" required>
+    </div>
+
+    <div class="field">
+      <label for="punggung">Nama Punggung</label>
+      <input type="text" id="punggung" placeholder="Contoh: HanzzPanekk" maxlength="15" required>
+    </div>
+
+    <div class="field">
+      <label for="no">No Punggung</label>
+      <input type="number" id="no" placeholder="1 - 99" min="1" max="99" required>
+    </div>
+
+    <div class="field">
+      <label for="ukuran">Ukuran Baju</label>
+      <select id="ukuran" required>
+        <option value="">-- Pilih Ukuran --</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="XXXL">XXXL</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn" id="submitBtn">
+      <span class="btn-text">Kirim Data</span>
+    </button>
+  </form>
+
+  <footer class="card-footer">
+    <span class="dot"></span> Ready to submit
+  </footer>
+</main>
+
+<!-- Loading Overlay (submit) -->
+<div class="loader" id="loader">
+  <div class="spinner"></div>
+  <div class="loader-text">Mengirim Data...</div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">✓ Data Terkirim!</div>
+
+<!-- Backsound -->
+<audio id="bgm" loop preload="auto"></audio>
+
+<!-- Scripts -->
+<script src="config.js"></script>
+<script src="audio.js"></script>
+<script src="intro.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
