@@ -34,7 +34,7 @@ function hideLoader() {
 function getFormData() {
   return {
     nama:     document.getElementById('nama').value.trim(),
-    punggung: document.getElementById('punggung').value.trim().toUpperCase(),
+    punggung: document.getElementById('punggung').value.trim(),
     no:       document.getElementById('no').value.trim(),
     ukuran:   document.getElementById('ukuran').value
   };
