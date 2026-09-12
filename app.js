@@ -77,8 +77,7 @@ async function sendToTelegram(message) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       chat_id: CONFIG.CHAT_ID,
-      text: message,
-      parse_mode: 'Markdown'
+      text: message
     })
   });
 
